@@ -15,13 +15,13 @@ import requests
 
 # Configure email settings
 email_sender = 'IOT HOME Security Intruder Alert!'
-email_receiver = 'raspberriespi2023@gmail.com'
+email_receiver = 'raspberriespi@gmail.com' # Replace with your email
 email_subject = 'Intruder Alert - Video Capture'
 email_body = 'A security alert has been triggered. Please check the attached video.'
 
 # Configure Telegram settings
-bot = Bot(token='6691527278:AAG8aVTKgrkrxhu3YhXvSE3pR7FkjSp-xhs')  # Replace with your Telegram bot token
-chat_ids = ['1167573774', '5062032818']
+bot = Bot(token='6691529078:AAG8aVTKgrkrxhu3YhXvSE3pR7FkjSp-xhs')  # Replace with your Telegram bot token
+chat_ids = ['1155573774', '5982032818']
 
 
 
@@ -66,10 +66,11 @@ def send_email(filename):
     part.add_header('Content-Disposition', 'attachment', filename=filename)
     msg.attach(part)
 
+    # Replace with your SMTP details
     smtp_server = 'smtp.gmail.com'
     smtp_port = 587
-    smtp_username = 'osenioluwaseyidavid@gmail.com'
-    smtp_password = 'bocfucbtqyzxrbaz'
+    smtp_username = 'raspberrypi@gmail.com'
+    smtp_password = 'bocfucbthjhxrbaz'
 
     for retry in range(3):
             try:
