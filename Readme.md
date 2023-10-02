@@ -9,7 +9,7 @@ This project describes a simple Home Intruder Detection System using a Raspberry
 
 ## Prerequisites
 - Raspberry Pi OS installed on your Raspberry Pi.
-- Python 3.x installed on your Raspberry Pi.
+- Python 3.8 and above installed on your Raspberry Pi.
 - Internet connectivity on your Raspberry Pi.
 - A Gmail account for sending emails.
 - A Telegram bot and chat ID for sending Telegram notifications.
